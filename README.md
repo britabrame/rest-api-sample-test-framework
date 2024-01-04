@@ -20,7 +20,7 @@ Tests are maintained in the `src/test/java/tests/StarWarsApiTest.java` class.
 * **Configuration file**: `src/Configurations.properties` allows the user to maintain global configurations. Currently only BASE_URL and MAX_RESPONSE_TIME are maintained. Create new configurations by updating `Configurations.properties`. Example for accessing configured values:
     ```
       // Create properties file
-      properties = new Properties();
+      Properties properties = new Properties();
       try {
       properties.load(new FileInputStream("src/Configurations.properties"));
       } catch (IOException e) {
