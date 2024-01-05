@@ -14,7 +14,8 @@ public class StarWarsApiTest extends BaseTest {
     public void verifyPersonCount() {
         StarWarsApi swapi = new StarWarsApi();
         JsonPath json = swapi.getPeople();
-        Assert.assertEquals((Integer) json.get("count"), 82);
+        int actualCount = json.get("count");
+        Assert.assertEquals(actualCount, 82);
     }
 
     @Test

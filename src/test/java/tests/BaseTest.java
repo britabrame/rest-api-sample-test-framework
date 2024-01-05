@@ -7,19 +7,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * This class would be used for any required test setup.
+ */
 public abstract class BaseTest {
 
-    @BeforeClass
     public void setup(){
-        // Create properties file
-        Properties properties = new Properties();
-        try {
-            properties.load(new FileInputStream("src/Configurations.properties"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        // Set base uri
-        RestAssured.baseURI = properties.getProperty("BASE_URL");
+        // Nothing for now
     }
 }
