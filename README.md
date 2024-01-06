@@ -30,7 +30,23 @@ Test cases can follow this basic pattern:
         Assert.assertEquals(actualCount, 82);
     }
 ```
+### Accessing nested JSON data
+Given the JSON response from GET /films/ is as follows:
+![screenshot]()
 
+Then you can access the first film title in the `results` array like so:
+```
+    @Test
+    public void verifyFilmDetails(){
+        StarWarsApi swapi = new StarWarsApi();
+        JsonPath json = swapi.getFilms();
+        
+        // Get the title of the first film
+        String actualTitle = json.get("results[0].title"); 
+        
+        Assert.assertEquals(actualTitle, "A New Hope");
+    }
+```
 ### Asserts
 The following Asserts have already been implemented in the `src/test/java/apis/StarWarsApi.java` class so that they run automatically whenever the methods of that class (such as `getPeople()` or `getFilms()`) are called in tests:
   * Assert status code of responses is 200
