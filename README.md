@@ -32,7 +32,7 @@ Test cases can follow this basic pattern:
 ```
 ### Accessing nested JSON data
 Given the JSON response from GET /films/ is as follows:
-![screenshot]()
+![screenshot](https://github.com/britabrame/rest-api-sample-test-framework/blob/master/images/Screenshot.png)
 
 Then you can access the first film title in the `results` array like so:
 ```
