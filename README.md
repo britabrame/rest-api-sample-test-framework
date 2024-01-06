@@ -1,5 +1,5 @@
 ## About
-Sample API test framework using the open source Star Wars API. This project was developed to serve as a simple skeleton for new projects, or as a sandbox to try out API test framework features.
+This is a sample API test framework using [SWAPI](https://swapi.dev/), a Stars Wars data source accessible through an API. This project was developed to serve as a simple skeleton for new projects, and as a sandbox to try out API test framework features.
 
 ### Built with
 * Java
