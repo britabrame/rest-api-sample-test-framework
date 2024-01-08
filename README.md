@@ -1,5 +1,7 @@
 ## About
-This is a sample API test framework using [SWAPI](https://swapi.dev/), a Stars Wars data source accessible through an API. This project was developed to serve as a simple skeleton for new projects, and as a sandbox to try out API test framework features.
+This is a sample API test framework using a Stars Wars films data source accessible through an API, called [SWAPI](https://swapi.dev/). This project was developed to serve as a simple skeleton for new projects, and as a sandbox to try out API test framework features.
+
+Users should have a basic familiarity with [REST-assured](https://rest-assured.io/).
 
 ### Built with
 * Java
